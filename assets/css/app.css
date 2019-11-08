@@ -437,24 +437,69 @@ header .logo {
 .about-section-wrapper {
     height: 345px;
     padding-top: 90px;
-
-
 }
 
-.about-section {
+.about-section,
+.discount-section {
     width: 1105px;
     margin: 0 auto;
 }
 
-.about-section h1 {
+.about-section h1,
+.discount-section h1 {
     text-align: center;
+}
 
+.discount-section-wrapper {
+  background-color: #f8f6f8;
+    padding-top: 90px;
+}
+
+.discount-tab-item {
+  appearance: none;
+  border: none;
+  background: none;
+  color: #000;
+  opacity: 0.3;
+  font-size: 16px;
+  font-weight: 500;
+  height: 44px;
+  line-height: 27px;
+  border-bottom: 3px solid rgba(0,0,0,0);
+}
+
+/* .slick-active .discount-tab-item { */
+/*   color: #ec0c6d; */
+/*   border-bottom-color: #ec0c6d; */
+/* } */
+
+.slick-slide {
+  height: auto !important;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+.slick-next {
+  left: 0;
+}
+
+.discount-tabs {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
 .popular-section-wrapper {
     height: 550px;
     padding: 55px 80px;
-
 }
 
 .popular-section {
