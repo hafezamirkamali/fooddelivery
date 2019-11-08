@@ -17,7 +17,7 @@ img {
     position: absolute;
     bottom: 0px;
     left: 0;
-    
+
     width: 100%;
     height: 260px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
@@ -29,12 +29,24 @@ header {
     padding: 40px 80px;
     color: #fff;
 }
+
+.subpage header {
+  background-color: #fff;
+}
+
 .search {
     background-color: rgba(0, 0,0, .4);
     padding: 15px 15px 40px;
+    margin-left: auto;
+    margin-right: auto;
     width: 700px;
-    margin: 90px auto;
 }
+
+.home .search {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
 .search-form {
     display: flex;
     flex-flow: row nowrap;
@@ -60,7 +72,7 @@ header {
     appearance: none;
     color: #fff;
 
-    
+
 }
 
 .hero-content{
@@ -379,4 +391,111 @@ header {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
     text-decoration: none;
+}
+
+/**
+ * Subpage
+ **/
+
+.box {
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  color: #868686;
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+.box-cover {
+  background-size: cover;
+  background-position: center center;
+
+  height: 100px;
+  background-color: #f2eee2;
+  border-radius: 4px 4px 0 0;
+}
+
+.box-content {
+  padding: 10px 20px;
+}
+
+.box-heading {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+  color: #424242;
+}
+
+.box-accordion .box-opener {
+  display: block;
+  font-size: 13px;
+  color: #424242;
+  text-decoration: none;
+  width: 100%;
+  text-align: initial;
+  padding: 10px 15px;
+  transition: .15s ease;
+}
+
+.box-opener[aria-expanded=false] {
+  font-size: 16px;
+}
+
+.box-heading .btn {
+  /* col */
+}
+
+.filter-item {
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.filter-label {
+  margin-right: 7px;
+}
+
+.box-link:hover .box-heading {
+  color: #000;
+}
+
+.box-link {
+  text-decoration: none;
+}
+
+.box-link:hover {
+  text-decoration: none;
+}
+
+.box a {
+  color: #868686;
+  text-decoration: none;
+}
+
+.c-breadcrumb {
+  margin: 10px 0;
+}
+
+.c-breadcrumb a {
+  font-size: 11px;
+  color: #9f9f9f;
+
+  padding: 5px;
+
+  display: inline-block;
+}
+
+.c-breadcrumb a:after {
+  content: '>';
+
+  margin-right: 10px;
+}
+
+.c-breadcrumb a:hover {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
+.subpage {
+  background-color: #f6f6f6;
 }
