@@ -416,8 +416,31 @@ header {
   border-radius: 4px 4px 0 0;
 }
 
+.box-avatar {
+  background-size: cover;
+  background-position: center center;
+
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+
+  margin: 0 auto;
+
+  border-radius: 5px;
+
+  border: 1px solid #d8d8d8;
+}
+
 .box-content {
   padding: 10px 20px;
+}
+
+.box-restaurant-content {
+  text-align: center;
 }
 
 .box-heading {
@@ -425,6 +448,45 @@ header {
   font-size: 16px;
   font-weight: 900;
   color: #424242;
+}
+
+.box-restaurant-title {
+  margin-top: 50px;
+}
+
+.box-rate {
+  margin-top: 13px;
+  font-size: 13px;
+}
+
+.box-rate-num {
+  font-size: 16px;
+}
+
+.box-stars {
+  margin: 0 10px;
+}
+
+.box-address {
+  font-size: 13px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.box-btn {
+  min-width: 140px;
+}
+
+.box-btn-wrapper {
+  margin: 15px 0 7px;
+}
+
+.box-footer {
+  background-color: #f7f7f7;
+  padding: 12px 4px;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 0 0 4px 4px;
 }
 
 .box-accordion .box-opener {
