@@ -43,6 +43,14 @@ header .logo {
   height: 75px;
 }
 
+.home header, .home header a {
+  color: #fff;
+}
+
+.home .logo {
+  filter: brightness(0) invert(1);
+}
+
 .menu {
   display: flex;
   flex-flow: row nowrap;
@@ -61,6 +69,18 @@ header .logo {
 
 .menu-lang a:hover {
   color: #212121;
+}
+
+.home .menu-lang a,
+.home .menu-username {
+  color: #eee;
+  border-color: #eee;
+}
+
+.home .menu-lang a:hover,
+.home .menu-username:hover {
+  color: #fff;
+  border-color: #fff;
 }
 
 .menu-username {
