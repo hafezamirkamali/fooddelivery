@@ -17,7 +17,7 @@ img {
     position: absolute;
     bottom: 0px;
     left: 0;
-    
+
     width: 100%;
     height: 260px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
@@ -25,16 +25,99 @@ img {
 
 header {
     display: flex;
-    justify-content:space-between;
-    padding: 40px 80px;
+    justify-content: space-between;
+    padding: 14px 38px;
     color: #fff;
+
+    line-height: 30px;
+    font-size: 20px;
 }
+
+header .logo {
+  width: 95px;
+  height: 45px;
+}
+
+.subpage header {
+  background-color: #fff;
+  height: 75px;
+}
+
+.home header, .home header a {
+  color: #fff;
+}
+
+.home .logo {
+  filter: brightness(0) invert(1);
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: #767676;
+}
+
+.menu-lang {
+  margin: 0 24px;
+}
+
+.menu-lang a {
+  color: #767676;
+  text-decoration: none;
+}
+
+.menu-lang a:hover {
+  color: #212121;
+}
+
+.home .menu-lang a,
+.home .menu-username {
+  color: #eee;
+  border-color: #eee;
+}
+
+.home .menu-lang a:hover,
+.home .menu-username:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.menu-username {
+  font-size: 13px;
+  border: 1px solid #767676;
+  border-radius: 20px;
+  color: #767676;
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+.menu-username i {
+  margin-left: 7px;
+}
+
+.menu-username:hover {
+  text-decoration: none;
+  color: #212121;
+}
+
+.subpage main {
+  overflow: hidden;
+}
+
 .search {
     background-color: rgba(0, 0,0, .4);
     padding: 15px 15px 40px;
+    margin-left: auto;
+    margin-right: auto;
     width: 700px;
-    margin: 90px auto;
 }
+
+.home .search {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
 .search-form {
     display: flex;
     flex-flow: row nowrap;
@@ -59,8 +142,63 @@ header {
     border: none;
     appearance: none;
     color: #fff;
+}
 
-    
+.subpage .search-form button {
+  width: 115px;
+  margin-right: 7px;
+  background-color: #979797;
+  transition: .15s ease;
+}
+
+.subpage .search-form button:hover {
+  background-color: #aa004e
+}
+
+.subpage .search {
+  width: auto;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  background: linear-gradient(to bottom,rgba(180,180,180,1) 0,rgba(222,222,222,1) 48%,rgba(246,246,246,1) 100%)
+}
+
+.subpage .search-form {
+  width: 750px;
+  background-color: #fff;
+  height: auto;
+  box-shadow: 2px 2px 12px rgba(0,0,0,.3);
+  border-radius: 4px;
+  padding: 7px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subpage .input-groups {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  width: 100%;
+}
+
+.subpage .form-field {
+  flex: 1;
+}
+
+.subpage .search .search-form input {
+  padding: 8px 15px;
+  border-color: #d8d8d8;
+  border-radius: 0;
+  border-left-width: 0;
+  width: 100%;
+}
+
+.subpage .search .search-form .form-field:first-of-type input {
+  border-radius: 0 4px 4px 0;
+}
+
+.subpage .search .search-form .form-field:last-of-type input {
+  border-radius: 4px 0 0 4px;
+  border-left-width: 1px;
 }
 
 .hero-content{
@@ -299,24 +437,69 @@ header {
 .about-section-wrapper {
     height: 345px;
     padding-top: 90px;
-
-
 }
 
-.about-section {
+.about-section,
+.discount-section {
     width: 1105px;
     margin: 0 auto;
 }
 
-.about-section h1 {
+.about-section h1,
+.discount-section h1 {
     text-align: center;
+}
 
+.discount-section-wrapper {
+  background-color: #f8f6f8;
+    padding-top: 90px;
+}
+
+.discount-tab-item {
+  appearance: none;
+  border: none;
+  background: none;
+  color: #000;
+  opacity: 0.3;
+  font-size: 16px;
+  font-weight: 500;
+  height: 44px;
+  line-height: 27px;
+  border-bottom: 3px solid rgba(0,0,0,0);
+}
+
+/* .slick-active .discount-tab-item { */
+/*   color: #ec0c6d; */
+/*   border-bottom-color: #ec0c6d; */
+/* } */
+
+.slick-slide {
+  height: auto !important;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+.slick-next {
+  left: 0;
+}
+
+.discount-tabs {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
 .popular-section-wrapper {
     height: 550px;
     padding: 55px 80px;
-
 }
 
 .popular-section {
@@ -379,4 +562,173 @@ header {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
     text-decoration: none;
+}
+
+/**
+ * Subpage
+ **/
+
+.box {
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  color: #868686;
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+.box-cover {
+  background-size: cover;
+  background-position: center center;
+
+  height: 100px;
+  background-color: #f2eee2;
+  border-radius: 4px 4px 0 0;
+}
+
+.box-avatar {
+  background-size: cover;
+  background-position: center center;
+
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+
+  margin: 0 auto;
+
+  border-radius: 5px;
+
+  border: 1px solid #d8d8d8;
+}
+
+.box-content {
+  padding: 10px 20px;
+}
+
+.box-restaurant-content {
+  text-align: center;
+}
+
+.box-heading {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+  color: #424242;
+}
+
+.box-restaurant-title {
+  margin-top: 50px;
+}
+
+.box-rate {
+  margin-top: 13px;
+  font-size: 13px;
+}
+
+.box-rate-num {
+  font-size: 16px;
+}
+
+.box-stars {
+  margin: 0 10px;
+}
+
+.box-address {
+  font-size: 13px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.box-btn {
+  min-width: 140px;
+}
+
+.box-btn-wrapper {
+  margin: 15px 0 7px;
+}
+
+.box-footer {
+  background-color: #f7f7f7;
+  padding: 12px 4px;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 0 0 4px 4px;
+}
+
+.box-accordion .box-opener {
+  display: block;
+  font-size: 13px;
+  color: #424242;
+  text-decoration: none;
+  width: 100%;
+  text-align: initial;
+  padding: 10px 15px;
+  transition: .15s ease;
+}
+
+.box-opener[aria-expanded=false] {
+  font-size: 16px;
+}
+
+.box-heading .btn {
+  /* col */
+}
+
+.filter-item {
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.filter-label {
+  margin-right: 7px;
+}
+
+.box-link:hover .box-heading {
+  color: #000;
+}
+
+.box-link {
+  text-decoration: none;
+}
+
+.box-link:hover {
+  text-decoration: none;
+}
+
+.box a {
+  color: #868686;
+  text-decoration: none;
+}
+
+.c-breadcrumb {
+  margin: 10px 0;
+}
+
+.c-breadcrumb a {
+  font-size: 11px;
+  color: #9f9f9f;
+
+  padding: 5px;
+
+  display: inline-block;
+}
+
+.c-breadcrumb a:after {
+  content: '>';
+
+  margin-right: 10px;
+}
+
+.c-breadcrumb a:hover {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
+.subpage {
+  background-color: #f6f6f6;
 }
