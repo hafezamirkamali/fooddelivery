@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/app.css">
     <link href="./assets/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
@@ -54,21 +55,20 @@
 
                 </div>
                 <div class="hero-services">
-                    <div class="hero-services-item"><a href="#"><img src="./assets/imgs/supermarket.png" alt="">
-                            <div class="service-item-text">
-                                سوپرمارکت
-                            </div>
-
-                        </a></div>
-                    <div class="hero-services-item"><a href="#"><img src="./assets/imgs/confectionery.png" alt="">
+                    <div class="hero-services-item"><a href="./subpage/index.html"><img src="./assets/imgs/supermarket.png" alt="">
+                      <div class="service-item-text">
+                          سوپرمارکت
+                      </div>
+                    </a></div>
+                    <div class="hero-services-item"><a href="./subpage/index.html"><img src="./assets/imgs/confectionery.png" alt="">
                     <div class="service-item-text">
                         شیرینی
                     </div></a>
                     </div>
-                    <div class="hero-services-item"><a href="#"><img src="./assets/imgs/cafe.png" alt=""><div class="service-item-text">
+                    <div class="hero-services-item"><a href="./subpage/index.html"><img src="./assets/imgs/cafe.png" alt=""><div class="service-item-text">
                        کافی شاپ
                     </div></a></div>
-                    <div class="hero-services-item"><a href="#"><img src="./assets/imgs/restaurant.png" alt=""><div class="service-item-text">
+                    <div class="hero-services-item"><a href="./subpage/index.html"><img src="./assets/imgs/restaurant.png" alt=""><div class="service-item-text">
                         رستوران
                     </div></a>
                     </div>
@@ -144,18 +144,91 @@
              <span class='u-primary-color'>اسنپ‌فود  </span>
             </h1>
 
-            <div class="discount-tabs">
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
-              <button class='discount-tab-item'>تهران</button>
+            <div id='discount-tabs' class="discount-tabs">
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-1" id='discount-tab-1' role="tab" class="nav-link discount-tab-item active">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-2" id='discount-tab-2' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-3" id='discount-tab-3' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-4" id='discount-tab-4' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-5" id='discount-tab-5' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-6" id='discount-tab-6' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-7" id='discount-tab-7' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-8" id='discount-tab-8' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-9" id='discount-tab-9' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+                <li class=''>
+                  <a data-toggle="tab" href="#discount-content-tab-10" id='discount-tab-1' role="tab" class="nav-link discount-tab-item">تهران</a>
+                </li>
+              <!-- </ul> -->
             </div>
+
+            <div class="tab-content" id='discount-tab-content'>
+              <div role="tabpanel" id="discount-content-tab-1">
+                <div class="discount-content-item">
+                  <div class="discount-item">
+                    <div class="discount-img" style='background-image: url("./assets/imgs/snappfood_logo.svg")'></div>
+                    <div class="discount-title">رستوران بونو</div>
+                    <div class="discount-subtitle">کشاورز</div>
+                  </div>
+                  <div class="discount-item">
+                    <div class="discount-img" style='background-image: url("./assets/imgs/snappfood_logo.svg")'></div>
+                    <div class="discount-title">رستوران بونو</div>
+                    <div class="discount-subtitle">کشاورز</div>
+                  </div>
+                  <div class="discount-item">
+                    <div class="discount-img" style='background-image: url("./assets/imgs/snappfood_logo.svg")'></div>
+                    <div class="discount-title">رستوران بونو</div>
+                    <div class="discount-subtitle">کشاورز</div>
+                  </div>
+                  <div class="discount-item">
+                    <div class="discount-img" style='background-image: url("./assets/imgs/snappfood_logo.svg")'></div>
+                    <div class="discount-title">رستوران بونو</div>
+                    <div class="discount-subtitle">کشاورز</div>
+                  </div>
+                  <div class="discount-item">
+                    <div class="discount-img" style='background-image: url("./assets/imgs/snappfood_logo.svg")'></div>
+                    <div class="discount-title">رستوران بونو</div>
+                    <div class="discount-subtitle">کشاورز</div>
+                  </div>
+                  <div class="discount-item">
+                    <div class="discount-img" style='background-image: url("./assets/imgs/snappfood_logo.svg")'></div>
+                    <div class="discount-title">رستوران بونو</div>
+                    <div class="discount-subtitle">کشاورز</div>
+                  </div>
+                  <div class="discount-item">
+                    <div class="discount-img" style='background-image: url("./assets/imgs/snappfood_logo.svg")'></div>
+                    <div class="discount-title">رستوران بونو</div>
+                    <div class="discount-subtitle">کشاورز</div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" id="discount-content-tab-2" class="">content</div>
+              <div role="tabpanel" id="discount-content-tab-3" class="">content</div>
+              <div role="tabpanel" id="discount-content-tab-4" class="">content</div>
+              <div role="tabpanel" id="discount-content-tab-5" class="">content</div>
+              <div role="tabpanel" id="discount-content-tab-6" class="">content</div>
+              <div role="tabpanel" id="discount-content-tab-7" class="">content</div>
+              <div role="tabpanel" id="discount-content-tab-8" class="">content</div>
+              <div role="tabpanel" id="discount-content-tab-9" class="">content</div>
+              <div role="tabpanel" id="discount-content-tab-10" class="">content</div>
+            </div>
+
           </div>
         </section>
 
@@ -302,12 +375,75 @@
             </div>
         </section>
 
+        <footer>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="footer-heading">بیشتر بدانید</div>
+                <div class="footer-menu">
+                  <a href="#" class="footer-menu-item">منو</a>
+                  <a href="#" class="footer-menu-item">منو</a>
+                  <a href="#" class="footer-menu-item">منو</a>
+                  <a href="#" class="footer-menu-item">منو</a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer-heading">بیشتر بدانید</div>
+                <div class="footer-menu">
+                  <a href="#" class="footer-menu-item">منو</a>
+                  <a href="#" class="footer-menu-item">منو</a>
+                  <a href="#" class="footer-menu-item">منو</a>
+                  <a href="#" class="footer-menu-item">منو</a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer-heading">مجوز ها</div>
+              </div>
+              <div class="col-md-3">
+                <div class="subscribe">
+                  <div class="footer-heading">عضویت در خبرنامه</div>
+                  <p> برای عضویت در خبرنامه اسنپ‌فود و دریافت جدیدترین مطالب تخفیف‌‌ها و جشنواره‌ها ایمیل خود را وارد کنید </p>
+                  <form action="" class='subscribe-form' method="post">
+                    <div class="subscribe-input-group">
+                      <input type="text" placeholder='ایمیل' class='subscribe-input'>
+                      <button class='subscribe-btn' type='button'>عضویت</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="social">
+                  <a href="#" class="social-item">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="social-item">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-item">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="social-item">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="social-item">
+                    <i class="fab fa-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <div class="copyright">
+         ©2019
+         <strong>Snappfood</strong>
+         All rights reserved
+        </div>
     </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
-
-    <script src='assets/js/app.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src='assets/js/app.js'></script>
 </body>
 
 </html>
