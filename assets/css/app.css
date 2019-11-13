@@ -262,25 +262,43 @@ header .logo {
 
 .app-section-wrapper {
     background-color: #f8f6f8;
-    padding: 150px 0;
+    padding: 50px 20px;
+}
 
+.app-section-text {
+    padding: 20px 25px 0;
+}
+
+@media (min-width: 991px) {
+  .app-section-wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .app-section-text {
+    padding: 50px 20px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-section-wrapper {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .app-section-text {
+      padding: 75px 40px 0px 91px;
+  }
 }
 
 .app-section {
-    width: 956px;
-    height: 616px;
+    max-width: 956px;
+    min-height: 616px;
     margin: 0px auto;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    display: flex;
     padding-bottom: 80px;
-
-}
-
-.app-section-text {
-    width: 60%;
-    padding: 75px 40px 0px 91px;
 }
 
 .home-heading {
@@ -313,7 +331,7 @@ header .logo {
 
 .app-form-row {
     height: 60px;
-    width: 420px;
+    max-width: 420px;
     display: flex;
     align-items: stretch;
     margin-bottom: 40px;
@@ -323,21 +341,26 @@ header .logo {
     border-radius: 0 4px 4px 0;
     border: 1px solid rgba(0, 0,0, .2);
     font-size: 14px;
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 100%;
     padding: 20px 16px;
-
 }
 
 .app-form-btn {
     border-radius: 4px 0 0 4px;
+    flex: 1 1 150px;
     width: 135px;
     background-color: #ec0c6d;
     color: #fff;
     border: none;
 }
 
-.app-section-mobile {
-    margin-top: -70px;
+@media (min-width: 991px) {
+  .app-section-mobile {
+      margin-top: -70px;
+  }
 }
 
 .u-primary-color {
@@ -346,21 +369,29 @@ header .logo {
 
 .category-section-wrapper {
     padding: 96px 0 66px;
+    text-align: center;
 }
 
 .category-section {
-    width: 1140px;
+    max-width: 1140px;
+    padding: 0 40px;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
+@media screen and (max-width: 767.98px) {
+  .category-section {
+    justify-content: center;
+  }
+}
+
 .category-section-item {
     display: block;
     width: 200px;
     height: 89px;
-    margin-bottom: 30px;
+    margin: 0 15px 30px;
     background-image: url('../imgs/app-categories-sprite.png');
 
 }
@@ -439,25 +470,28 @@ header .logo {
 }
 
 .about-section-wrapper {
-    height: 345px;
+    min-height: 345px;
     padding-top: 90px;
 }
 
 .about-section,
 .discount-section {
-    width: 1105px;
+    max-width: 1105px;
+    padding: 0 60px;
     margin: 0 auto;
 }
 
 @media screen and (max-width:1399px) and (min-width:1000px) {
   .discount-section {
-    width: 950px;
+    max-width: 950px;
+    padding: 0 40px;
   }
 }
 
 @media screen and (max-width:999px) {
   .discount-section {
-    width: 730px;
+    max-width: 730px;
+    padding: 0 20px;
   }
 }
 
@@ -534,6 +568,20 @@ header .logo {
   border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
+@media screen and (max-width: 1199.98px) {
+  .discount-tabs {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .discount-section-wrapper {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+
 .discount-content-item {
   display: flex;
   flex-flow: row nowrap;
@@ -571,11 +619,11 @@ header .logo {
 }
 
 .popular-section-wrapper {
-    height: 550px;
+    min-height: 550px;
 }
 
 .popular-section {
-    width: 1260px;
+    max-width: 1260px;
     padding: 55px 80px;
     margin: 0 auto;
     display: flex;
@@ -585,7 +633,7 @@ header .logo {
 
 .popular-section-text ,
 .popular-section-img {
-    width: 50%;
+    /* width: 50%; */
 
 }
 
@@ -600,16 +648,16 @@ header .logo {
 
 .popular-logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-flow: row wrap;
-    width: 545px;
+    max-width: 545px;
 }
 
 .logo-item {
     display: block;
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
+    margin: 0 10px 20px;
 }
 
 .city-section-wrapper {
@@ -684,7 +732,13 @@ header .logo {
 }
 
 .box-content {
-  padding: 10px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box-content:not(.collapse) {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .box-restaurant-content {
@@ -777,6 +831,12 @@ header .logo {
   text-decoration: none;
 }
 
+.box-link:hover .box-btn {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
 .box a {
   color: #868686;
   text-decoration: none;
@@ -816,9 +876,16 @@ header .logo {
  **/
 
   footer {
-    max-width: 2000px;
-    padding: 0 80px 50px;
+    padding: 0 15px 30px;
     background-color: #f8f6f8;
+  }
+
+  @media (min-width: 1200px) {
+    footer {
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-bottom: 80px;
+    }
   }
 
   footer:before {
@@ -859,6 +926,11 @@ header .logo {
     color: #000;
   }
 
+  @media screen and (max-width: 991.98px) {
+    .footer-col {
+      margin-bottom: 40px;
+    }
+  }
 
 /**
  * Subscribe
@@ -866,6 +938,8 @@ header .logo {
 
   .subscribe {
     text-align: center;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   .subscribe p {
@@ -882,6 +956,8 @@ header .logo {
   }
 
   .subscribe-input {
+    flex: 1 1 100%;
+    min-width: 0;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 0 4px 4px 0;
     background-color: #fff;
@@ -893,9 +969,10 @@ header .logo {
   }
 
   .subscribe-btn {
+    flex: 1 0 100px;
     border-radius: 4px 0 0 4px;
     background-color: #ec0c6d;
-    width: 96px;
+    width: 100px;
     border: none;
     appearance: none;
     color: #fff;
@@ -912,28 +989,32 @@ header .logo {
 
   .social {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    padding-top: 70px;
+    position: relative;
   }
 
   .social:before {
     content: '';
 
     display: block;
-    margin-top: 35px;
-    margin-bottom: 35px;
-
     width: 100%;
     height: 2px;
 
     background-color: rgba(0,0,0,.1);
     border-bottom: 1px solid #fff;
+
+    position: absolute;
+    top: 35px;
   }
 
   .social-item {
     color: rgba(0,0,0,0.8);
     background-color: #fff;
+
+    flex: 0 0 45px;
 
     width: 45px;
     height: 45px;
@@ -942,7 +1023,7 @@ header .logo {
     border: 1px solid #dbdbdb;
 
     font-size: 17px;
-    margin: 0 10px;
+    margin: 0 5px;
 
     display: flex;
     justify-content: center;

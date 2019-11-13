@@ -20,7 +20,13 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 6,
         }
+      }, {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+        }
       }
+
     ]
   });
 
